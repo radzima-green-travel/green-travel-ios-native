@@ -1,1 +1,0 @@
-export {ObjectDetailsHeader} from './ObjectDetailsHeader';

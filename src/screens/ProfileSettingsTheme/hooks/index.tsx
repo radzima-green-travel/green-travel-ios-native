@@ -1,1 +1,0 @@
-export {useProfileSettingsTheme} from './useProfileSettingsTheme';

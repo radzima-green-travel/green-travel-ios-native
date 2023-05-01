@@ -1,3 +1,0 @@
-{
-  "query": "query RadzimaMobile { getObjectsMetadata(id: \"tag\") { value } }"
-}

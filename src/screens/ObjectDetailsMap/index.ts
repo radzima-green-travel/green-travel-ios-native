@@ -1,1 +1,0 @@
-export {ObjectDetailsMap} from './ObjectDetailsMap';

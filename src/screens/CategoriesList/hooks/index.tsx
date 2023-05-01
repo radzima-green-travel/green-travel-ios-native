@@ -1,1 +1,0 @@
-export {useCategoriesList} from './useCategoriesList';

@@ -1,1 +1,0 @@
-export {BookmarksList} from './BookmarksList';

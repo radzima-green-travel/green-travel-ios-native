@@ -1,1 +1,0 @@
-export {ProfileSettingsLanguage} from './ProfileSettingsLanguage';

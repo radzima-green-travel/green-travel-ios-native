@@ -1,1 +1,0 @@
-export {ObjectCard} from './ObjectCard';

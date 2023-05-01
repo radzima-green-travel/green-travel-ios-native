@@ -1,1 +1,0 @@
-export {ObjectDetails} from './ObjectDetails';
