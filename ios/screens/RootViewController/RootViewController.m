@@ -11,10 +11,6 @@
 #import "ColorsLegacy.h"
 #import "TextUtils.h"
 #import "UserDefaultsService.h"
-
-#import <React/RCTBridge.h>
-#import <React/RCTBundleURLProvider.h>
-#import <React/RCTRootView.h>
 #import "RotationLockUtility.h"
 #import "UserDefaultsServiceConstants.h"
 @import Amplitude;

@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <React/RCTBridgeDelegate.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RootViewController : UIViewController<RCTBridgeDelegate>
+@interface RootViewController : UIViewController
 
 @property (strong, nonatomic) UIViewController *current;
 

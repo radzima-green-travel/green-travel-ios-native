@@ -10,7 +10,6 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		24E15160D5632E665C362965 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 745C34F067A2EA32BDC236BD /* awsconfiguration.json */; };
-		2DE0007B799E8DAF75A65893 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81064F557E001E9E478D73E8 /* ExpoModulesProvider.swift */; };
 		5A006D1A2783565A00010D63 /* URLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A006D192783565A00010D63 /* URLUtils.m */; };
 		5A05E8542821787E00017BA0 /* AmplifyBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A05E8532821787E00017BA0 /* AmplifyBridge.swift */; };
 		5A096AFD2836A20F000FADB2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A096AFC2836A20F000FADB2 /* LoginViewController.m */; };
@@ -72,7 +71,7 @@
 		5A6DC5D2265AAB3900A2D37B /* RoutesSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6DC5D1265AAB3900A2D37B /* RoutesSheetController.m */; };
 		5A6EDF8E26C9421D001307DC /* BottomSheetPresentationControllerTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EDF8D26C9421D001307DC /* BottomSheetPresentationControllerTransitioningDelegate.m */; };
 		5A6EDF9226C9671C001307DC /* BottomSheetTouchForwardingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EDF9126C9671C001307DC /* BottomSheetTouchForwardingView.m */; };
-		5A775A0126064C6A00CEFC78 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A7759FF26064C6900CEFC78 /* AppDelegate.mm */; };
+		5A775A0126064C6A00CEFC78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7759FF26064C6900CEFC78 /* AppDelegate.m */; };
 		5A775B1C26064C9000CEFC78 /* StoredCategoryUUIDToRelatedItemUUIDs+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A775A0626064C8E00CEFC78 /* StoredCategoryUUIDToRelatedItemUUIDs+CoreDataClass.m */; };
 		5A775B1D26064C9000CEFC78 /* StoredRelatedItemUUID+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A775A0826064C8E00CEFC78 /* StoredRelatedItemUUID+CoreDataProperties.m */; };
 		5A775B1F26064C9000CEFC78 /* StoredPlaceItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A775A0A26064C8E00CEFC78 /* StoredPlaceItem+CoreDataProperties.m */; };
@@ -406,7 +405,7 @@
 		5A6EDF9026C9671C001307DC /* BottomSheetTouchForwardingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BottomSheetTouchForwardingView.h; sourceTree = "<group>"; };
 		5A6EDF9126C9671C001307DC /* BottomSheetTouchForwardingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BottomSheetTouchForwardingView.m; sourceTree = "<group>"; };
 		5A7759FC26064C6900CEFC78 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5A7759FF26064C6900CEFC78 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		5A7759FF26064C6900CEFC78 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5A775A0626064C8E00CEFC78 /* StoredCategoryUUIDToRelatedItemUUIDs+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StoredCategoryUUIDToRelatedItemUUIDs+CoreDataClass.m"; sourceTree = "<group>"; };
 		5A775A0726064C8E00CEFC78 /* StoredCategoryUUIDToRelatedItemUUIDs+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StoredCategoryUUIDToRelatedItemUUIDs+CoreDataProperties.h"; sourceTree = "<group>"; };
 		5A775A0826064C8E00CEFC78 /* StoredRelatedItemUUID+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StoredRelatedItemUUID+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -768,7 +767,6 @@
 		7933816829CB9BC900D2935F /* TestingSceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingSceneDelegate.swift; sourceTree = "<group>"; };
 		7933816E29CB9BEF00D2935F /* BookmarkServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkServiceTests.swift; sourceTree = "<group>"; };
 		7933816F29CB9BEF00D2935F /* BookmarkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkService.swift; sourceTree = "<group>"; };
-		81064F557E001E9E478D73E8 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-greenTravel/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		90CFDA5F6334163334123761 /* Pods-greenTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-greenTravel.debug.xcconfig"; path = "Target Support Files/Pods-greenTravel/Pods-greenTravel.debug.xcconfig"; sourceTree = "<group>"; };
 		99067FDBAF94D93561F2FC63 /* Pods_greenTravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_greenTravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E864D96B10ABCD37BAAAE8 /* Pods-greenTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-greenTravel.release.xcconfig"; path = "Target Support Files/Pods-greenTravel/Pods-greenTravel.release.xcconfig"; sourceTree = "<group>"; };
@@ -1118,7 +1116,7 @@
 			isa = PBXGroup;
 			children = (
 				5A7759FC26064C6900CEFC78 /* AppDelegate.h */,
-				5A7759FF26064C6900CEFC78 /* AppDelegate.mm */,
+				5A7759FF26064C6900CEFC78 /* AppDelegate.m */,
 			);
 			name = app;
 			sourceTree = "<group>";
@@ -2251,14 +2249,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		85FC59C3FCCCED7631603DDD /* greenTravel */ = {
-			isa = PBXGroup;
-			children = (
-				81064F557E001E9E478D73E8 /* ExpoModulesProvider.swift */,
-			);
-			name = greenTravel;
-			sourceTree = "<group>";
-		};
 		C11F5CD373D543CEFBB10130 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2419,20 +2409,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native code and images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export SENTRY_PROPERTIES=sentry.properties\nexport EXTRA_PACKAGER_ARGS=\"--sourcemap-output $DERIVED_FILE_DIR/main.jsbundle.map\"\nexport NODE_BINARY=node\nexport ENTRY_FILE=index.ts\n../node_modules/@sentry/cli/bin/sentry-cli react-native xcode ../node_modules/react-native/scripts/react-native-xcode.sh\n";
-		};
 		456AD5FC5952504A811CAABD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2537,14 +2513,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-greenTravel/Pods-greenTravel-frameworks.sh",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
-				"${BUILT_PRODUCTS_DIR}/MapboxMobileEvents/MapboxMobileEvents.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/hermes.framework/hermes",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxMobileEvents.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2558,52 +2530,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-greenTravel/Pods-greenTravel-resources.sh",
-				"${PODS_ROOT}/Amplitude/Sources/Amplitude/Resources/ComodoRsaDomainValidationCA.der",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_ROOT}/Amplitude/Sources/Resources/ComodoRsaDomainValidationCA.der",
+				"${PODS_ROOT}/MapboxMobileEvents/MapboxMobileEvents/Resources/logger.html",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoRsaDomainValidationCA.der",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/logger.html",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-greenTravel/Pods-greenTravel-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6F1B229AF36466B86D337BD /* Upload Debug Symbols to Sentry */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Upload Debug Symbols to Sentry";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export SENTRY_PROPERTIES=sentry.properties\n../node_modules/@sentry/cli/bin/sentry-cli upload-dsym\n";
-		};
-		FD10A7F022414F080027D42C /* Start Packager */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Start Packager";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2805,7 +2742,7 @@
 				5A6DC50B2655B28900A2D37B /* StoredArea+CoreDataProperties.m in Sources */,
 				5A98894C2843AA030000271B /* NumberView.m in Sources */,
 				5A775E1726077A7D00CEFC78 /* WeRecommendCell.m in Sources */,
-				5A775A0126064C6A00CEFC78 /* AppDelegate.mm in Sources */,
+				5A775A0126064C6A00CEFC78 /* AppDelegate.m in Sources */,
 				5A775B4F26064C9000CEFC78 /* SearchModel.m in Sources */,
 				5AD6BF1A26C030B100DD3F2B /* AnalyticsTimeTracer.m in Sources */,
 				5AD6BF1126BEA9DF00DD3F2B /* ScrollViewUtils.m in Sources */,
@@ -2816,7 +2753,6 @@
 				5A2315DB28E0A428004CB989 /* ApiServiceIndexFile.m in Sources */,
 				5A6DC56C2655B5C500A2D37B /* StoredCoordinate+CoreDataProperties.m in Sources */,
 				5A775E792607E0A100CEFC78 /* GreenTravel.xcdatamodeld in Sources */,
-				2DE0007B799E8DAF75A65893 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
