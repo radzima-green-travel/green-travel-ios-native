@@ -114,6 +114,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.7.0):
     - GoogleUtilities/Logger
+  - Keys (1.0.1)
   - Mapbox-iOS-SDK (5.9.0):
     - MapboxMobileEvents (= 0.10.2)
   - MapboxMobileEvents (0.10.2)
@@ -135,6 +136,7 @@ DEPENDENCIES:
   - Firebase/AnalyticsWithoutAdIdSupport
   - Firebase/Crashlytics
   - Firebase/Performance
+  - Keys (from `Pods/CocoaPodsKeys`)
   - Mapbox-iOS-SDK (= 5.9.0)
   - SDWebImage (~> 5.0)
   - SwiftLint
@@ -169,6 +171,10 @@ SPEC REPOS:
     - SDWebImage
     - SwiftLint
 
+EXTERNAL SOURCES:
+  Keys:
+    :path: Pods/CocoaPodsKeys
+
 SPEC CHECKSUMS:
   Amplify: e420feae21071215f3170ead85745a658b75ae41
   AmplifyPlugins: b2bd45a64ef2f8c842272c85bf7775a3974f34aa
@@ -191,6 +197,7 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 4c19f031220c72464d460c9daa1fb5d1acce958e
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
   Mapbox-iOS-SDK: a5915700ec84bc1a7f8b3e746d474789e35b7956
   MapboxMobileEvents: 2bc0ca2eedb627b73cf403258dce2b2fa98074a6
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
@@ -198,6 +205,6 @@ SPEC CHECKSUMS:
   SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
   SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
 
-PODFILE CHECKSUM: a2fe8a21a4512efd83256b673cbb051875d30493
+PODFILE CHECKSUM: 7d1e2177e2c4eaa2ebbde887be561ff234824d98
 
 COCOAPODS: 1.11.3

@@ -64,6 +64,9 @@ GEM
       typhoeus (~> 1.0)
     cocoapods-deintegrate (1.0.5)
     cocoapods-downloader (1.6.3)
+    cocoapods-keys (2.3.1)
+      dotenv
+      ruby-keychain
     cocoapods-plugins (1.0.0)
       nap
     cocoapods-search (1.0.1)
@@ -217,6 +220,8 @@ GEM
     nap (1.1.0)
     naturally (2.2.1)
     netrc (0.11.0)
+    og-corefoundation (0.2.3)
+      ffi
     optparse (0.1.1)
     os (1.1.4)
     plist (3.7.0)
@@ -229,6 +234,9 @@ GEM
     retriable (3.1.2)
     rexml (3.2.5)
     rouge (2.0.7)
+    ruby-keychain (0.4.0)
+      ffi
+      og-corefoundation (~> 0.2.0)
     ruby-macho (2.5.1)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
@@ -281,6 +289,7 @@ PLATFORMS
 
 DEPENDENCIES
   cocoapods (~> 1.11.3)
+  cocoapods-keys
   fastlane
   rexml
 

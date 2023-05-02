@@ -5,6 +5,23 @@ inhibit_all_warnings!
 
 use_frameworks! :linkage => :static
 
+plugin 'cocoapods-keys', {
+  :project => "greenTravel",
+  :keys => [
+    "Environment",
+    "NativeClientUrl",
+    "NativeClientImageUrl",
+    "NativeClientGraphQLUrl",
+    "NativeClientGraphQLApiKey",
+    "MapAccessToken",
+    "MapBoxClientUrl",
+    "MapBoxStyleUrlAny",
+    "MapBoxStyleUrlDark",
+    "AmplitudeKey",
+    "MapboxDownloadsToken",
+    "NativeClientIndexFileBaseUrl",
+]}
+
 target 'greenTravel' do
   pod 'Firebase/AnalyticsWithoutAdIdSupport'
   # add pods for any other desired Firebase products
@@ -20,7 +37,7 @@ target 'greenTravel' do
 
   pod 'SwiftLint'
 
-
+  
 
   post_install do |installer|
 
