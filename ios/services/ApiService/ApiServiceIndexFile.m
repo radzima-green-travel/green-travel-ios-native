@@ -9,7 +9,7 @@
 #import "IndexModelData.h"
 #import "LocaleConstants.h"
 #import "LocaleUtils.h"
-#import <react-native-ultimate-config/ConfigValues.h>
+#import <Keys/GreenTravelKeys.h>
 #import "CategoryUtils.h"
 
 @interface ApiServiceIndexFile()
@@ -30,8 +30,9 @@ static const NSString * kAPIVersion = @"v1";
 
 - (NSString *)categoriesURL {
   NSString *lang = getCurrentLocaleLanguageCode();
+  GreenTravelKeys *keys = [GreenTravelKeys new];
   return [NSString stringWithFormat:@"%@/objects_%@_%@.json",
-          NATIVE_CLIENT_INDEX_FILE_BASE_URL, kAPIVersion, lang];
+          keys.nativeClientIndexFileBaseUrl, kAPIVersion, lang];
 }
 
 - (void)loadCategories:(NSString *)currentHash

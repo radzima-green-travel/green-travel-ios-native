@@ -7,7 +7,7 @@
 
 #import "MapService.h"
 @import Mapbox;
-#import <react-native-ultimate-config/ConfigValues.h>
+#import <Keys/GreenTravelKeys.h>
 
 static const NSUInteger kRoutesRequestTimeout = 60;
 
@@ -34,8 +34,9 @@ static const NSUInteger kRoutesRequestTimeout = 60;
                             from.longitude, from.latitude];
   NSString *destinationLatLng = [NSString stringWithFormat:@"%f,%f",
                                  to.longitude, to.latitude];
-  NSString *mapToken = MAP_ACCESS_TOKEN;
-  NSString *url = [NSString stringWithFormat:@"%@/directions/v5/mapbox/driving/%@;%@?access_token=%@&geometries=geojson", MAP_BOX_CLIENT_URL, sourceLatLng, destinationLatLng, mapToken];
+  GreenTravelKeys *keys = [GreenTravelKeys new];
+  NSString *mapToken = keys.mapAccessToken;
+  NSString *url = [NSString stringWithFormat:@"%@/directions/v5/mapbox/driving/%@;%@?access_token=%@&geometries=geojson", keys.mapBoxClientUrl, sourceLatLng, destinationLatLng, mapToken];
 
   NSURL *nsURL = [NSURL URLWithString:url];
   NSURLRequest *request = [NSURLRequest requestWithURL:nsURL

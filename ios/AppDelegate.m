@@ -1,5 +1,5 @@
 #import "AppDelegate.h"
-#import "RootViewController.h"
+#import "MainViewController.h"
 #import "Firebase/Firebase.h"
 #import "RotationLockUtility.h"
 
@@ -8,14 +8,11 @@
 {
   
   // Native app code start
-  RootViewController *rootViewControllerForNativeApp =
-  [[RootViewController alloc] initWithApplication:application launchOptions:launchOptions];
-  
-  [rootViewControllerForNativeApp showNativeViewController];
+  MainViewController *rootViewController = [[MainViewController alloc] init];
   [FIRApp configure];
   UIWindow *window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
   self.window = window;
-  self.window.rootViewController = rootViewControllerForNativeApp;
+  self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
   return YES;

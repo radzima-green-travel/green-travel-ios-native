@@ -22,7 +22,6 @@
 #import "UserFetchErrorViewController.h"
 #import "ProfileTableViewController.h"
 #import "LoginViewController.h"
-#import "RootViewController.h"
 #import "MainViewController.h"
 #import "SettingsScreenRoot.h"
 
@@ -96,8 +95,7 @@
   dispatch_async(dispatch_get_global_queue(QOS_CLASS_UTILITY, 0), ^{
     dispatch_async(dispatch_get_main_queue(), ^{
       // Find 4th tab controller in application.
-      RootViewController *rootViewController = (RootViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-      MainViewController *tabController = (MainViewController *) rootViewController.current;
+      MainViewController *tabController = (MainViewController *) [UIApplication sharedApplication].keyWindow.rootViewController;
       if (tabController.viewControllers.count < 4) {
         return;
       }

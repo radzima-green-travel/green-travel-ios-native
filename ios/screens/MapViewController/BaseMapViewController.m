@@ -32,7 +32,7 @@
 #import "AlertUtils.h"
 #import "CacheService.h"
 #import "MapViewControllerConstants.h"
-#import <react-native-ultimate-config/ConfigValues.h>
+#import <Keys/GreenTravelKeys.h>
 #import "CategoriesFilterView/CategoriesFilterViewConstants.h"
 
 @interface BaseMapViewController ()
@@ -95,13 +95,14 @@ static CGFloat const kLocateMeZoomLevel = 10.0;
 - (void)applyStyleToMap {
   if (@available(iOS 12.0, *)) {
     NSURL *styleURL;
+    GreenTravelKeys *keys = [GreenTravelKeys new];
     if (self.traitCollection.userInterfaceStyle == UIUserInterfaceStyleDark) {
-      styleURL = [NSURL URLWithString:MAP_BOX_STYLE_URL_DARK];
+      styleURL = [NSURL URLWithString:keys.mapBoxStyleUrlDark];
       [self.mapView setStyleURL:styleURL];
       return;
     }
     if (self.traitCollection.userInterfaceStyle == UIUserInterfaceStyleLight) {
-      styleURL = [NSURL URLWithString:MAP_BOX_STYLE_URL_ANY];
+      styleURL = [NSURL URLWithString:keys.mapBoxStyleUrlAny];
       [self.mapView setStyleURL:styleURL];
       return;
     }

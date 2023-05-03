@@ -8,7 +8,7 @@
 
 #import "ImageUtils.h"
 #import <UIKit/UIKit.h>
-#import <react-native-ultimate-config/ConfigValues.h>
+#import <Keys/GreenTravelKeys.h>
 
 SDWebImageCombinedOperation* loadImage(NSString *url, void (^onImageReady)(UIImage *, NSError *)) {
   NSURL *urlForImage = [NSURL URLWithString:url];
@@ -29,9 +29,9 @@ NSString* getFullImageURL(NSString *imageURL) {
   
   NSString *pathPart = [urlDecodedImageURL stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]];
   NSString *pathPartNoCommas = [pathPart stringByReplacingOccurrencesOfString:@"," withString:@"%2C"];
-  
+  GreenTravelKeys *keys = [GreenTravelKeys new];
   NSString *fullImageURL = [NSString stringWithFormat:@"%@/public/%@",
-                            NATIVE_CLIENT_IMAGE_URL, pathPartNoCommas];
+                            keys.nativeClientImageUrl, pathPartNoCommas];
   return fullImageURL;
 }
 

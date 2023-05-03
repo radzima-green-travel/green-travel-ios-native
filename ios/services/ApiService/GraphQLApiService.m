@@ -8,15 +8,16 @@
 #import "GraphQLApiService.h"
 #import "PlaceItem.h"
 #import "PlaceCategory.h"
-#import <react-native-ultimate-config/ConfigValues.h>
 #import "CategoryUtils.h"
 #import "LocaleUtils.h"
 #import "IndexModelData.h"
 #import "LocaleConstants.h"
+#import <Keys/GreenTravelKeys.h>
 
 @interface GraphQLApiService()
 @property (strong, nonatomic) NSCache<NSString *, NSMutableString *> *queryCache;
 @property (strong, nonatomic) NSURLSession *session;
+@property (strong, nonatomic) GreenTravelKeys *keys;
 @end
 
 static NSString * const kQueryGetTag = @"index-tag";
@@ -29,12 +30,14 @@ static NSString * const kQueryGetIndexLocaleLegacy = @"index-locale-legacy";
     self = [super init];
     if (self) {
         _session = session;
+        _keys = [GreenTravelKeys new];
     }
     return self;
 }
 
 - (NSString *)categoriesURL {
-  return [NSString stringWithFormat:@"%@", NATIVE_CLIENT_GRAPHQL_URL];
+  
+  return [NSString stringWithFormat:@"%@", self.keys.nativeClientGraphQLUrl];
 }
 
 - (NSData *)getQuery:(NSString *)queryName
@@ -81,10 +84,10 @@ static NSString * const kQueryGetIndexLocaleLegacy = @"index-locale-legacy";
 
 - (NSMutableURLRequest *)makeRequestForQuery:(NSString *)query
                                   withParams:(NSDictionary<NSString *,NSString *> *)params {
-  NSURL *url = [NSURL URLWithString:NATIVE_CLIENT_GRAPHQL_URL];
+  NSURL *url = [NSURL URLWithString:self.keys.nativeClientGraphQLUrl];
   NSMutableURLRequest *mutableRequest = [NSMutableURLRequest requestWithURL:url];
   [mutableRequest setHTTPMethod:@"POST"];
-  [mutableRequest setValue:NATIVE_CLIENT_GRAPHQL_API_KEY
+  [mutableRequest setValue:self.keys.nativeClientGraphQLApiKey
         forHTTPHeaderField:@"x-api-key"];
   [mutableRequest setValue:@"gzip"
         forHTTPHeaderField:@"Accept-Encoding"];
