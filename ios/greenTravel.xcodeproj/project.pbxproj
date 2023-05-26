@@ -245,10 +245,7 @@
 		5EA9409628E6175400E90014 /* UserSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9409328E6175400E90014 /* UserSettingsViewController.m */; };
 		5EAE434328A6C5E200042455 /* SettingsTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE434128A6C5E200042455 /* SettingsTableViewCellModel.m */; };
 		5EAE434628A6C66800042455 /* ProfileSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE434428A6C66800042455 /* ProfileSection.m */; };
-		624E38D32519E4B4001D98E2 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 624E38CF2519E4B4001D98E2 /* Montserrat-SemiBold.ttf */; };
-		624E38D42519E4B4001D98E2 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 624E38D02519E4B4001D98E2 /* Montserrat-Bold.ttf */; };
 		628194D125F213BD00491FDF /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628194D025F213BD00491FDF /* BootSplash.storyboard */; };
-		62CDE1E22579291F00554C1E /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62CDE1E12579291F00554C1E /* Montserrat-Regular.ttf */; };
 		7931796429ACAC07009729A4 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F62A26B8B4960729F8B3D98 /* amplifyconfiguration.json */; };
 		7933816929CB9BC900D2935F /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7933816629CB9BC900D2935F /* TestAppDelegate.swift */; };
 		7933816A29CB9BC900D2935F /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7933816729CB9BC900D2935F /* TestingViewController.swift */; };
@@ -752,11 +749,8 @@
 		5EAE434428A6C66800042455 /* ProfileSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileSection.m; sourceTree = "<group>"; };
 		5EAE434528A6C66800042455 /* ProfileSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileSection.h; sourceTree = "<group>"; };
 		5F62A26B8B4960729F8B3D98 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
-		624E38CF2519E4B4001D98E2 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.ttf"; path = "../android/app/src/main/assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
-		624E38D02519E4B4001D98E2 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../android/app/src/main/assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		628194D025F213BD00491FDF /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = greenTravel/BootSplash.storyboard; sourceTree = "<group>"; };
 		6281F7DF24C9E40D00C51231 /* greenTravel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "greenTravel-Bridging-Header.h"; sourceTree = "<group>"; };
-		62CDE1E12579291F00554C1E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../android/app/src/main/assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		745C34F067A2EA32BDC236BD /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		7933815929CB9BA700D2935F /* GreenTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7933816629CB9BC900D2935F /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
@@ -2162,9 +2156,6 @@
 		624E38CE2519E467001D98E2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				624E38D02519E4B4001D98E2 /* Montserrat-Bold.ttf */,
-				624E38CF2519E4B4001D98E2 /* Montserrat-SemiBold.ttf */,
-				62CDE1E12579291F00554C1E /* Montserrat-Regular.ttf */,
 				5AD71D9F274D5CDA00F205AD /* InfoPlist.strings */,
 				5A6CC8D9279C2C4500EE6E35 /* index-locale-any.graphql */,
 				5A12E88F27BA9A32004FD8C6 /* index-locale-legacy.graphql */,
@@ -2359,7 +2350,6 @@
 				5A775B4A26064C9000CEFC78 /* OpenSans-Regular.ttf in Resources */,
 				5A775B4B26064C9000CEFC78 /* OpenSans-BoldItalic.ttf in Resources */,
 				5A6CC8DC279D930C00EE6E35 /* index-tag.graphql in Resources */,
-				624E38D42519E4B4001D98E2 /* Montserrat-Bold.ttf in Resources */,
 				5A775B3326064C9000CEFC78 /* OpenSans-SemiBold.ttf in Resources */,
 				5A39D6EF26B34C04008FC20C /* Localizable.strings in Resources */,
 				5A775B4526064C9000CEFC78 /* Montserrat-Black.ttf in Resources */,
@@ -2373,7 +2363,6 @@
 				5A775B3C26064C9000CEFC78 /* Montserrat-MediumItalic.ttf in Resources */,
 				5AD71D9D274D5CDA00F205AD /* InfoPlist.strings in Resources */,
 				5A775B3226064C9000CEFC78 /* Montserrat-LightItalic.ttf in Resources */,
-				624E38D32519E4B4001D98E2 /* Montserrat-SemiBold.ttf in Resources */,
 				5AD2DA3426FDED7B00876841 /* Settings.bundle in Resources */,
 				5A6CC8DA279C2C4500EE6E35 /* index-locale-any.graphql in Resources */,
 				7931796429ACAC07009729A4 /* amplifyconfiguration.json in Resources */,
@@ -2382,7 +2371,6 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				5A775B3426064C9000CEFC78 /* Montserrat-Medium.ttf in Resources */,
 				5A775B4926064C9000CEFC78 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
-				62CDE1E22579291F00554C1E /* Montserrat-Regular.ttf in Resources */,
 				5A12E89527BEA68E004FD8C6 /* details.html in Resources */,
 				5A775B4826064C9000CEFC78 /* Montserrat-Italic.ttf in Resources */,
 				5A12E89027BA9A32004FD8C6 /* index-locale-legacy.graphql in Resources */,
