@@ -3,8 +3,7 @@ install! 'cocoapods', :deterministic_uuids => false, :warn_for_unused_master_spe
 
 inhibit_all_warnings!
 
-use_frameworks! :linkage => :static
-
+use_frameworks! 
 plugin 'cocoapods-keys', {
   :project => "greenTravel",
   :keys => [
