@@ -28,7 +28,7 @@ target 'greenTravel' do
   pod 'Firebase/Crashlytics'
   pod 'Firebase/Performance'
   pod 'Amplitude', '~> 8.2.0'
-  pod 'Mapbox-iOS-SDK', '5.9.0'
+  pod 'Mapbox-iOS-SDK', '~> 6.4.1'
   
   pod 'Amplify'
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
