@@ -1,5 +1,5 @@
 # About
-Travel app, has native iOS ([UIKit](https://developer.apple.com/documentation/uikit?language=objc)) and [React Native](https://reactnative.dev/) versions.
+Travel app, native iOS ([UIKit](https://developer.apple.com/documentation/uikit?language=objc)) fork of [original RN/UIKit combined version](https://github.com/radzima-green-travel/green-travel-combine).
 
 # Setup
 1. Install [Bundler](https://bundler.io/).
